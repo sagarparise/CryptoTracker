@@ -1,7 +1,8 @@
 .homeContainer{
 
   width: 100vw;
- 
+  min-height: 100vh;
+  height: fit-content;
  padding-top: 30px;
 display: flex;
 justify-content: space-between;
