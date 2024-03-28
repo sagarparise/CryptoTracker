@@ -1,0 +1,14 @@
+.watchlist{
+  width: 100%;
+  min-height: 80vh;
+  padding: 50px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  .card{
+    width: 320px;
+    height: 320px;
+  }
+}

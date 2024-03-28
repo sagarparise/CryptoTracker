@@ -1,0 +1,52 @@
+.dash-container{
+  width: 100%;
+  height: fit-content;
+  padding: 1rem 1.2rem;
+}
+.tabName{
+
+  font-size: 20px;
+  font-weight: 600;
+
+  text-align: center;
+
+
+
+ 
+}
+
+ .ant-tabs-tab-btn {
+width: 300px;
+  color: var(--white);
+
+}
+
+
+
+// search bar
+.search-container{
+  width: 95%;
+  height: 50px;
+  margin-inline: auto;
+  padding: 4px 20px;
+  margin-bottom: 20px;
+  background: var(--card);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  input{
+    flex: 1;
+    height: 100%;
+    padding-block: 10px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--white);
+  }
+}
+
+
+
+
+

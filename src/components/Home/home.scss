@@ -1,0 +1,159 @@
+.homeContainer{
+
+  width: 100vw;
+ 
+ padding-top: 30px;
+display: flex;
+justify-content: space-between;
+
+ .right{
+  flex: 1.2;
+  height: fit-content;
+  padding: 20px;
+  h1{
+    font-size: 140px;  
+
+  
+  }
+  .cryptoHead:hover{
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--white);
+    -webkit-text-fill-color: var(--black);
+   
+   }
+  .real-time{
+    color: var(--blue);
+   
+  }
+
+
+p{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text);
+    margin-block: 20px;
+ 
+  }
+ }
+
+ .left{
+  flex: 0.8;
+  
+  display: flex;
+  justify-content: center;
+ position: relative;
+ 
+
+  .img{
+    width: 380px;
+    height: 630px;
+
+    img{
+      width:100%;
+      height: 100%;
+    
+    }
+    position: relative;
+    z-index: 10;
+
+    &::after{
+      content: '';
+      width: 85%;
+      height: 90%;
+      position: absolute;
+      background-image: linear-gradient(to left, rgb(72, 178, 239), aqua,);
+      border-radius: 40px;
+      top: 30px;
+      left: 30px;
+      z-index: -1;
+    }
+
+  }
+
+  
+    @keyframes updown{
+      0%{
+        transform: translateY(0);
+      }
+      50%{
+        transform: translateY(-5px);
+      }
+      100%{
+        transform: translateY(-10px);
+      }
+     
+
+    }
+   
+
+ }
+}
+#dashboard{
+  font-weight: 600;
+  &:hover{
+    box-shadow: 5px 5px 5px #397fe96f;
+    transition: all 0.5s; 
+  }
+}
+#share{
+  font-weight: 600;
+  border: 2px solid var(--blue) !important;
+  &:hover{
+  background-color: var(--blue) !important;
+  color: #fff;
+  transition: all 0.5s; 
+  }
+}
+
+@media screen and (max-width: 1250px){
+  .right > h1{
+    font-size: 90px !important;
+  }
+}
+
+@media screen and (max-width: 950px){
+  .homeContainer{
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px !important;
+
+    .right{
+     flex: 0.4;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     h1{
+      text-align: center;
+     }
+     p{
+      text-align: center;
+     }
+    }
+    .left{
+      flex: 0.6;
+    }
+  }
+  
+}
+@media screen and (max-width: 600px)
+{
+  .right h1{
+    font-size: 60px!important;
+  }
+  .img{
+    width: 280px !important;
+    height: 500px !important;
+  }
+}
+
+@media screen and (max-width: 400px)
+{
+  .right h1{
+    font-size: 45px!important;
+  }
+  .img{
+    width: 220px !important;
+    height: 380px !important;
+  }
+}
