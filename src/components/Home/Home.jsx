@@ -37,7 +37,7 @@ const handleShare = async () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          Track Crypto
+          Track Coin
         </motion.h1>
         <motion.h1
           className="real-time"
@@ -52,7 +52,7 @@ const handleShare = async () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 1 }}
         >
-          Track crypto through a public api in real time. Visit the dashboard to
+          Track coin through a public api in real time. Visit the dashboard to
           do so!
         </motion.p>
         <Flex gap="large" wrap="wrap">

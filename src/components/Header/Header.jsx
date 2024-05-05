@@ -57,7 +57,7 @@ function Header() {
       {contextHolder}
       <div className="header">
         <h1>
-          CryptoTracker <span style={{ color: "var(--blue)" }}>.</span>
+          SecureCoinHub <span style={{ color: "var(--blue)" }}>.</span>
         </h1>
         <div className="right">
           <Switch checked={theme === "dark"} onChange={changeTheme} />
@@ -97,7 +97,7 @@ function Header() {
 
       <Drawer
       className="drawer"
-        title={<span style={{ color: "var(--white)" }}> Crypto Tracker</span>}
+        title={<span style={{ color: "var(--white)" }}> SecureCoinHub</span>}
         open={open}
         onClose={() => setOpen((pre) => !pre)}
         styles={{

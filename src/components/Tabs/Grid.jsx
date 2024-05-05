@@ -21,17 +21,37 @@ function Grid({ coins }) {
 
   // Filter coins to display on the current page
   const coinsOnPage = coins.slice(startIndex, endIndex);
+  const staggerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2, // Adjust the delay between each card
+      },
+    },
+  };
+  const cardVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0 },
+   
+  };
 
   return (
     <>
-      <div
-        className="grid"      
+      <motion.div
+        className="grid"  
+        variants={staggerVariants}  
+        initial="hidden"
+        animate="visible"  
+      
       >
         {coins &&
           coinsOnPage.map((coin, index) => (
-            <Coincard coin={coin} key={index} />
+          <motion.div variants={cardVariants} >
+              <Coincard coin={coin} key={index} />
+          </motion.div>
           ))}
-      </div>
+      </motion.div>
       <div className="pagination">
         <Pagination
           current={currentPage}
